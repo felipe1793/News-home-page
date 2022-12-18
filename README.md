@@ -1,2 +1,2 @@
-# News-home-page
+# News home page
 Pagina inicial (Frontend mentor)
