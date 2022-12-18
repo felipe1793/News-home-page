@@ -1,0 +1,29 @@
+*{
+    padding: 0px;
+    margin: 2%;
+    box-sizing: border-box;
+}
+
+body{
+    border: solid red 1px;
+    background-color: gray;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+header{
+    margin: 10px 0px;
+}
+
+.pequeno-espaco{
+    padding: 0% 3%;
+}
+
+.inicio-flex{
+    flex-grow: 2;
+}
