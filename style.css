@@ -19,6 +19,13 @@ ul{
 header{
     margin: 10px 0px;
 }
+.menu{
+    display: none;
+}
+
+.menu-close{
+    display: none;
+}
 
 .inicio-flex{
     flex-grow: 2;
@@ -143,4 +150,42 @@ hr {
 
 .container-footer h3:hover{
     color: #ff8254;
+}
+
+@media screen and (max-width: 600px) {
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul div {
+        display: none;
+    }
+
+    .inicio-flex{
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-read-more button{
+        height: 50px;
+    }
+
+    .container-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .attribution{
+        margin-top: 10%;
+    }
 }
