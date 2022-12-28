@@ -31,6 +31,10 @@ header{
     flex-grow: 2;
 }
 
+.menu-lateral{
+    display: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -189,6 +193,12 @@ hr {
         margin-top: 10%;
     }
 
+    .menu{
+        position: relative;
+        width: 100vh;
+        margin-left: 70%;
+    }
+
     .menu-flex {
         display: flex;
         flex-direction: column;
@@ -203,5 +213,47 @@ hr {
 
     .menu-flex ol {
         list-style: none;
+    }
+
+    .menu-lateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        background-color: #fff;
+        height: 110vh;
+        margin: 0;
+        padding-bottom: 40%;
+        align-items: center;
+    }
+
+    .active {
+        right: 0%;
+        transition:  1s ease;
+    }
+
+    .open {
+        position: fixed;
+        margin-left: 76%;
+    }
+
+    .menu-lateral ol {
+        list-style: none;
+        padding: 70% 0%;
+    }
+    
+    .menu-lateral img {
+        width: 18%;
+        height: 9%;
+        align-self: flex-end;
+        margin-right: 16%;
+        background-size: cover;
+    }
+
+    .menu-lateral ol li {
+        font-size: clamp( 1.5em, 2em, 3em);
     }
 }
