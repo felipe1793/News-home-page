@@ -4,11 +4,11 @@ const sideMenu = document.querySelector(".menu-close") //
 
 const open = () => {
     if(btnImg.src.indexOf("icon-menu-close.svg") == -1){
-        btnImg.src = "/assets/images/icon-menu-close.svg"
+        btnImg.src = "./assets/images/icon-menu-close.svg"
         sideMenu.classList.remove("menu-close")
         sideMenu.classList.add("menu-flex")
     }else {
-        btnImg.src = "/assets/images/icon-menu.svg";
+        btnImg.src = "./assets/images/icon-menu.svg";
         sideMenu.classList.remove("menu-flex")
         sideMenu.classList.add("menu-close")
     }
