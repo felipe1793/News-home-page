@@ -188,4 +188,20 @@ hr {
     .attribution{
         margin-top: 10%;
     }
+
+    .menu-flex {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .menu-flex img{
+        height: 10%;
+        width: 10%;
+        align-self: flex-end;
+    }
+
+    .menu-flex ol {
+        list-style: none;
+    }
 }
